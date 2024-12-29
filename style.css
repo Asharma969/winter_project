@@ -1,22 +1,103 @@
 body {
-    background-image: url("./assets/snowman.jpg");
+    background-image: url("./images/snowman.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100%;
     overflow: none;
-
-    /*font for body*/ 
+    height: 98vh;
+    /*font for body*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+main {
+    margin: 50px 100px;
+    flex: 1;
+}
+
+
 h1 {
     font-size: 70px;
     text-align: center;
-    color: rgb(141, 16, 16);
-    border: 3px black solid;
-    border-radius: 10px;
+    color: rgb(162, 20, 20);
     margin: 0 150px;
+}
+
+footer {
+    text-align: right;
+}
+
+.description {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 200px;
+}
+
+.content {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.card {
+    border: 5px brown solid;
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.card:hover {
+    backdrop-filter: blur(100px);
+    box-shadow: 5px 5px #999;
+}
+
+
+.recipes {
+    font-size: x-large;
+}
+
+.backtohome {
+    width: 125px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.backtohome:hover {
+    background-color: rgb(162, 20, 20);
+    color: white;
+    border-radius: 9px;
+    box-shadow: 5px 5px #999;
+}
+
+.sub-heading {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+ol {
+    margin-top: 0;
+}
+
+.ingredients-with-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    margin: 0 20px;
+    width: 350px;
+    border: 1px red solid;
+    clip-path: circle(50%);
+}
+
+li {
+    margin: 5px 5px;
 }
